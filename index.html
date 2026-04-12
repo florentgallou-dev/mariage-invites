@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre Mariage — Laurina & Florent</title>
+  <meta name="description" content="Faire-part de mariage — Nous avons le plaisir de vous inviter à célébrer notre union.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon.ico">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header id="hero" class="section hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-in">
+      <img src="public/img/logo.png" alt="Logo du mariage" class="hero__logo">
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Nous nous marions</p>
+      <h1 class="hero__title">Laurina <span class="amp">&amp;</span> Florent</h1>
+      <div class="hero__date" data-i18n="hero.date">15 mai 2026</div>
+      <a href="#details" class="btn" data-i18n="hero.cta">Découvrir</a>
+    </div>
+  </header>
+
+  <!-- ============ DÉTAILS ============ -->
+  <section id="details" class="section details">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n="details.title">La Célébration</h2>
+      <p class="section__subtitle reveal" data-i18n="details.subtitle">Nous vous invitons à célébrer notre union</p>
+      <p class="section__subtitle reveal" data-i18n="details.subtitle2">voici le programme</p>
+      <div class="section__divider reveal"></div>
+      <p class="section__date reveal" data-i18n="details.date">Le vendredi 15 mai 2026</p>
+      <div class="details__grid">
+        <div class="details__card reveal golden">
+          <div class="details__icon">🏛️</div>
+          <h3 data-i18n="civil.title">Mariage civil</h3>
+          <p class="details__time">14h00</p>
+          <p data-i18n="civil.place">Mairie de Bacqueville-en-Caux</p>
+          <a href="https://maps.app.goo.gl/2bGx8XCqmzJxk7Hu7" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <p class="details__desc" data-i18n="civil.desc">Nous avons la joie de vous convier pour le mariage civil.</p>
+        </div>
+        <div class="details__card reveal golden">
+          <div class="details__icon">🌿</div>
+          <h3 data-i18n="laique.title">Cérémonie laïque</h3>
+          <p class="details__time">15h00</p>
+          <p data-i18n-html="laique.place">École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <p class="details__desc" data-i18n="laique.desc">Les "oui" officiels prononcés, place à la cérémonie laïque, voyage entre nos histoires, nos familles et les promesses que nous choisissons d'honorer.</p>
+        </div>
+        <div class="details__card reveal golden">
+          <div class="details__icon">🥂</div>
+          <h3 data-i18n="vin.title">Vin d'honneur</h3>
+          <p data-i18n-html="vin.place">École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <p class="details__desc" data-i18n="vin.desc">Après l'émotion, la joie, on se retrouve pour le vin d'honneur, partageons rires, verres levés et l'envie simple de profiter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" class="section countdown">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n="countdown.title">Compte à Rebours</h2>
+      <div class="section__divider reveal"></div>
+      <div class="countdown__timer reveal" data-date="2026-05-15T14:00:00">
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-days">--</span>
+          <span class="countdown__label" data-i18n="countdown.days">Jours</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-hours">--</span>
+          <span class="countdown__label" data-i18n="countdown.hours">Heures</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-minutes">--</span>
+          <span class="countdown__label" data-i18n="countdown.minutes">Minutes</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-seconds">--</span>
+          <span class="countdown__label" data-i18n="countdown.seconds">Secondes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFOS PRATIQUES ============ -->
+  <section id="info" class="section info">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n="info.title">Infos Pratiques</h2>
+      <div class="section__divider reveal"></div>
+      <div class="info__grid">
+        <div class="info__card reveal">
+          <h3 data-i18n="dresscode.title">Code vestimentaire</h3>
+          <p data-i18n="dresscode.desc">Faites vous plaisir mais prévoyez une tenue plus décontractée pour le lendemain.</p>
+        </div>
+        <div class="info__card reveal">
+          <h3 data-i18n="liste.title">Liste de Mariage</h3>
+          <p data-i18n="liste.desc">Votre présence est notre plus beau cadeau. Si vous souhaitez contribuer, une urne sera à disposition.</p>
+        </div>
+        <div class="info__card_golden reveal">
+          <h3 data-i18n="capsule.title">Capsule temporelle</h3>
+          <p data-i18n="capsule.desc1">Lors de notre mariage, nous créerons une capsule temporelle que nous ouvrirons lors de notre 5ème anniversaire.</p>
+          <p data-i18n="capsule.desc2">Toute participation : lettre, photo, objet symbolique, est la bienvenue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section id="rsvp" class="section rsvp">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n="rsvp.title">Une question ?</h2>
+      <div class="section__divider reveal"></div>
+      <p class="rsvp__intro reveal" data-i18n="rsvp.intro">Une information, une question ? N'hésitez pas à nous contacter.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__text">Laurina <span class="amp">&amp;</span> Florent</p>
+    <p class="footer__text" data-i18n="footer.date">15 Mai 2026</p>
+    <p class="footer__heart">♥</p>
+  </footer>
+
+  <!-- LANG SWITCHER -->
+  <div class="lang-switcher" role="navigation" aria-label="Langue / Language / Taal">
+    <button class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+    <button class="lang-btn" data-lang="nl" aria-label="Nederlands">NL</button>
+  </div>
+
+  <!-- NAV DOTS -->
+  <nav class="nav-dots" aria-label="Navigation sections">
+    <a href="#hero" class="nav-dot active" aria-label="Accueil"></a>
+    <a href="#details" class="nav-dot" aria-label="Détails"></a>
+    <a href="#countdown" class="nav-dot" aria-label="Compte à rebours"></a>
+    <a href="#info" class="nav-dot" aria-label="Infos pratiques"></a>
+    <a href="#rsvp" class="nav-dot" aria-label="RSVP"></a>
+  </nav>
+
+  <script src="public/js/i18n.js"></script>
+  <script src="public/js/script.js"></script>
+</body>
+</html>
