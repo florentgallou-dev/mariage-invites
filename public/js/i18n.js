@@ -40,7 +40,7 @@
       'info.title': 'Infos Pratiques',
 
       'dresscode.title': 'Code vestimentaire',
-      'dresscode.desc':  "Faites vous plaisir mais prévoyez une tenue plus décontractée pour le lendemain.",
+      'dresscode.desc':  "Faites vous plaisir.",
 
       'liste.title': 'Liste de Mariage',
       'liste.desc':  'Votre présence est notre plus beau cadeau. Si vous souhaitez contribuer, une urne sera à disposition.',
@@ -87,7 +87,7 @@
       'info.title': 'Practical Info',
 
       'dresscode.title': 'Dress code',
-      'dresscode.desc':  "Feel free to dress up, but remember a more relaxed outfit for the day after!",
+      'dresscode.desc':  "Feel free to dress up.",
 
       'liste.title': 'Wedding List',
       'liste.desc':  'Your presence is our greatest gift. If you wish to contribute, a collection box will be available.',
@@ -134,7 +134,7 @@
       'info.title': 'Praktische Info',
 
       'dresscode.title': 'Kledingadvies',
-      'dresscode.desc':  'Voel je vrij om je op te kleden, maar vergeet niet een meer ontspannen outfit voor de dag erna!',
+      'dresscode.desc':  'Voel je vrij om je op te kleden.',
 
       'liste.title': 'Huwelijkslijst',
       'liste.desc':  'Uw aanwezigheid is ons mooiste cadeau. Als u wilt bijdragen, is er een collectebus beschikbaar.',
