@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -427,6 +428,10 @@ a {
   font-weight: 300;
   color: var(--gold);
   line-height: 1;
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
+  display: inline-block;
+  text-align: center;
 }
 
 .countdown__label {
