@@ -14,60 +14,65 @@
 </head>
 <body>
 
+  <!-- SKIP LINK -->
+  <a href="#details" class="skip-link" data-i18n="skip.details">Accéder au programme</a>
+
   <!-- ============ HERO ============ -->
   <header id="hero" class="section hero">
-    <div class="hero__overlay"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__content fade-in">
       <img src="public/img/logo.png" alt="Logo du mariage" class="hero__logo">
       <p class="hero__subtitle" data-i18n="hero.subtitle">Nous nous marions</p>
       <h1 class="hero__title">Laurina <span class="amp">&amp;</span> Florent</h1>
-      <div class="hero__date" data-i18n="hero.date">15 mai 2026</div>
+      <p class="hero__date"><time datetime="2026-05-15" data-i18n="hero.date">15 mai 2026</time></p>
       <a href="#details" class="btn" data-i18n="hero.cta">Découvrir</a>
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- ============ DÉTAILS ============ -->
-  <section id="details" class="section details">
+  <section id="details" class="section details" aria-labelledby="details-title">
     <div class="container">
-      <h2 class="section__title reveal" data-i18n="details.title">La Célébration</h2>
+      <h2 id="details-title" class="section__title reveal" data-i18n="details.title">La Célébration</h2>
       <p class="section__subtitle reveal" data-i18n="details.subtitle">Nous vous invitons à célébrer notre union</p>
       <p class="section__subtitle reveal" data-i18n="details.subtitle2">voici le programme</p>
-      <div class="section__divider reveal"></div>
-      <p class="section__date reveal" data-i18n="details.date">Le vendredi 15 mai 2026</p>
+      <div class="section__divider reveal" aria-hidden="true"></div>
+      <p class="section__date reveal"><time datetime="2026-05-15" data-i18n="details.date">Le vendredi 15 mai 2026</time></p>
       <div class="details__grid">
-        <div class="details__card reveal golden">
-          <div class="details__icon">🏛️</div>
-          <h3 data-i18n="civil.title">Mariage civil</h3>
-          <p class="details__time">14h00</p>
+        <article class="details__card reveal golden" aria-labelledby="civil-title">
+          <div class="details__icon" aria-hidden="true">🏛️</div>
+          <h3 id="civil-title" data-i18n="civil.title">Mariage civil</h3>
+          <p class="details__time"><time datetime="14:00">14h00</time></p>
           <p data-i18n="civil.place">Mairie de Bacqueville-en-Caux</p>
-          <a href="https://maps.app.goo.gl/2bGx8XCqmzJxk7Hu7" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <a href="https://maps.app.goo.gl/2bGx8XCqmzJxk7Hu7" target="_blank" rel="noopener noreferrer" aria-label="Localiser sur la carte : Mairie de Bacqueville-en-Caux" data-i18n-label="map.townhall">🗺️</a>
           <p class="details__desc" data-i18n="civil.desc">Nous avons la joie de vous convier pour le mariage civil.</p>
-        </div>
-        <div class="details__card reveal golden">
-          <div class="details__icon">🌿</div>
-          <h3 data-i18n="laique.title">Cérémonie laïque</h3>
-          <p class="details__time">15h00</p>
+        </article>
+        <article class="details__card reveal golden" aria-labelledby="laique-title">
+          <div class="details__icon" aria-hidden="true">🌿</div>
+          <h3 id="laique-title" data-i18n="laique.title">Cérémonie laïque</h3>
+          <p class="details__time"><time datetime="15:00">15h00</time></p>
           <p data-i18n-html="laique.place">École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
-          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer" aria-label="Localiser sur la carte : École Thomas Pesquet, Bacqueville-en-Caux" data-i18n-label="map.school">🗺️</a>
           <p class="details__desc" data-i18n="laique.desc">Les "oui" officiels prononcés, place à la cérémonie laïque, voyage entre nos histoires, nos familles et les promesses que nous choisissons d'honorer.</p>
-        </div>
-        <div class="details__card reveal golden">
-          <div class="details__icon">🥂</div>
-          <h3 data-i18n="vin.title">Vin d'honneur</h3>
+        </article>
+        <article class="details__card reveal golden" aria-labelledby="vin-title">
+          <div class="details__icon" aria-hidden="true">🥂</div>
+          <h3 id="vin-title" data-i18n="vin.title">Vin d'honneur</h3>
           <p data-i18n-html="vin.place">École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
-          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer">🗺️</a>
+          <a href="https://maps.app.goo.gl/MVLq6GUXVtdzEJdt8" target="_blank" rel="noopener noreferrer" aria-label="Localiser sur la carte : École Thomas Pesquet, Bacqueville-en-Caux" data-i18n-label="map.school">🗺️</a>
           <p class="details__desc" data-i18n="vin.desc">Après l'émotion, la joie, on se retrouve pour le vin d'honneur, partageons rires, verres levés et l'envie simple de profiter.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ============ COUNTDOWN ============ -->
-  <section id="countdown" class="section countdown">
+  <section id="countdown" class="section countdown" aria-labelledby="countdown-title">
     <div class="container">
-      <h2 class="section__title reveal" data-i18n="countdown.title">Compte à Rebours</h2>
-      <div class="section__divider reveal"></div>
-      <div class="countdown__timer reveal" data-date="2026-05-15T14:00:00">
+      <h2 id="countdown-title" class="section__title reveal" data-i18n="countdown.title">Compte à Rebours</h2>
+      <div class="section__divider reveal" aria-hidden="true"></div>
+      <div class="countdown__timer reveal" role="timer" aria-label="Compte à rebours jusqu'au mariage" data-i18n-label="countdown.aria" data-date="2026-05-15T14:00:00">
         <div class="countdown__block">
           <span class="countdown__number" id="cd-days">--</span>
           <span class="countdown__label" data-i18n="countdown.days">Jours</span>
@@ -89,10 +94,10 @@
   </section>
 
   <!-- ============ INFOS PRATIQUES ============ -->
-  <section id="info" class="section info">
+  <section id="info" class="section info" aria-labelledby="info-title">
     <div class="container">
-      <h2 class="section__title reveal" data-i18n="info.title">Infos Pratiques</h2>
-      <div class="section__divider reveal"></div>
+      <h2 id="info-title" class="section__title reveal" data-i18n="info.title">Infos Pratiques</h2>
+      <div class="section__divider reveal" aria-hidden="true"></div>
       <div class="info__grid">
         <div class="info__card reveal">
           <h3 data-i18n="dresscode.title">Code vestimentaire</h3>
@@ -112,19 +117,21 @@
   </section>
 
   <!-- ============ RSVP ============ -->
-  <section id="rsvp" class="section rsvp">
+  <section id="rsvp" class="section rsvp" aria-labelledby="rsvp-title">
     <div class="container">
-      <h2 class="section__title reveal" data-i18n="rsvp.title">Une question ?</h2>
-      <div class="section__divider reveal"></div>
+      <h2 id="rsvp-title" class="section__title reveal" data-i18n="rsvp.title">Une question ?</h2>
+      <div class="section__divider reveal" aria-hidden="true"></div>
       <p class="rsvp__intro reveal" data-i18n="rsvp.intro">Une information, une question ? N'hésitez pas à nous contacter.</p>
     </div>
   </section>
+
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <p class="footer__text">Laurina <span class="amp">&amp;</span> Florent</p>
     <p class="footer__text" data-i18n="footer.date">15 Mai 2026</p>
-    <p class="footer__heart">♥</p>
+    <p class="footer__heart" aria-hidden="true">♥</p>
   </footer>
 
   <!-- LANG SWITCHER -->
@@ -134,13 +141,18 @@
     <button class="lang-btn" data-lang="nl" aria-label="Nederlands">NL</button>
   </div>
 
+  <!-- HIGH CONTRAST TOGGLE -->
+  <button class="contrast-toggle" id="contrast-toggle" type="button" aria-pressed="false" aria-label="Mode contraste élevé" data-i18n-label="contrast.label">
+    <span aria-hidden="true">◐</span>
+  </button>
+
   <!-- NAV DOTS -->
   <nav class="nav-dots" aria-label="Navigation sections">
-    <a href="#hero" class="nav-dot active" aria-label="Accueil"></a>
-    <a href="#details" class="nav-dot" aria-label="Détails"></a>
-    <a href="#countdown" class="nav-dot" aria-label="Compte à rebours"></a>
-    <a href="#info" class="nav-dot" aria-label="Infos pratiques"></a>
-    <a href="#rsvp" class="nav-dot" aria-label="RSVP"></a>
+    <a href="#hero" class="nav-dot active" aria-label="Accueil" data-i18n-label="nav.hero"></a>
+    <a href="#details" class="nav-dot" aria-label="Programme" data-i18n-label="nav.details"></a>
+    <a href="#countdown" class="nav-dot" aria-label="Compte à rebours" data-i18n-label="nav.countdown"></a>
+    <a href="#info" class="nav-dot" aria-label="Infos pratiques" data-i18n-label="nav.info"></a>
+    <a href="#rsvp" class="nav-dot" aria-label="Contact" data-i18n-label="nav.rsvp"></a>
   </nav>
 
   <script src="public/js/i18n.js"></script>

@@ -53,7 +53,16 @@
       'rsvp.intro':       "Une information, une question ? N'hésitez pas à nous contacter.",
 
       'footer.date': '15 Mai 2026',
-    },
+      'skip.details':     'Acc\u00e9der au programme',
+      'contrast.label':   'Mode contraste \u00e9lev\u00e9',
+      'map.townhall':     'Localiser sur la carte : Mairie de Bacqueville-en-Caux',
+      'map.school':       'Localiser sur la carte : \u00c9cole Thomas Pesquet, Bacqueville-en-Caux',
+      'countdown.aria':   'Compte \u00e0 rebours jusqu\'au mariage',
+      'nav.hero':         'Accueil',
+      'nav.details':      'Programme',
+      'nav.countdown':    'Compte \u00e0 rebours',
+      'nav.info':         'Infos pratiques',
+      'nav.rsvp':         'Contact',    },
 
     en: {
       'hero.subtitle': "We're getting married",
@@ -100,6 +109,17 @@
       'rsvp.intro':       "Any information, a question? Don't hesitate to get in touch.",
 
       'footer.date': 'May 15, 2026',
+
+      'skip.details':     'Skip to programme',
+      'contrast.label':   'High contrast mode',
+      'map.townhall':     'Locate on map: Bacqueville-en-Caux Town Hall',
+      'map.school':       'Locate on map: Thomas Pesquet school, Bacqueville-en-Caux',
+      'countdown.aria':   'Countdown to the wedding',
+      'nav.hero':         'Home',
+      'nav.details':      'Programme',
+      'nav.countdown':    'Countdown',
+      'nav.info':         'Practical info',
+      'nav.rsvp':         'Contact',
     },
 
     nl: {
@@ -147,6 +167,17 @@
       'rsvp.intro':       'Informatie, een vraag? Aarzel niet om contact met ons op te nemen.',
 
       'footer.date': '15 Mei 2026',
+
+      'skip.details':     'Ga naar programma',
+      'contrast.label':   'Hoog contrast modus',
+      'map.townhall':     'Bekijk op kaart: Gemeentehuis Bacqueville-en-Caux',
+      'map.school':       'Bekijk op kaart: Basisschool Thomas Pesquet, Bacqueville-en-Caux',
+      'countdown.aria':   'Aftellen tot het huwelijk',
+      'nav.hero':         'Startpagina',
+      'nav.details':      'Programma',
+      'nav.countdown':    'Aftellen',
+      'nav.info':         'Praktische info',
+      'nav.rsvp':         'Contact',
     },
   };
 
@@ -168,8 +199,14 @@
 
     // placeholder des champs de formulaire
     document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
-      const key = el.dataset.i18nPlaceholder;
+      var key = el.dataset.i18nPlaceholder;
       if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    // aria-label
+    document.querySelectorAll('[data-i18n-label]').forEach(function (el) {
+      var key = el.dataset.i18nLabel;
+      if (t[key] !== undefined) el.setAttribute('aria-label', t[key]);
     });
 
     // état actif du bouton

@@ -691,3 +691,291 @@ a {
     font-size: 2rem;
   }
 }
+
+/* ---------- ACCESSIBILITY ---------- */
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.8rem 1.5rem;
+  background: var(--charcoal);
+  color: var(--ivory);
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  outline-color: var(--ivory);
+}
+
+.nav-dot:focus-visible {
+  outline-offset: 4px;
+}
+
+/* High Contrast Toggle */
+.contrast-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--sand);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--warm-gray);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contrast-toggle:hover {
+  color: var(--terracotta);
+  background: rgba(196, 122, 90, 0.1);
+}
+
+.contrast-toggle[aria-pressed="true"] {
+  background: var(--charcoal);
+  color: var(--ivory);
+  border-color: var(--charcoal);
+}
+
+/* ---------- HIGH CONTRAST MODE ---------- */
+body.high-contrast {
+  background: #fff;
+  color: #000;
+}
+
+body.high-contrast .hero__overlay,
+body.high-contrast .hero__logo,
+body.high-contrast img {
+  display: none;
+}
+
+body.high-contrast .hero,
+body.high-contrast .hero::before,
+body.high-contrast .hero::after,
+body.high-contrast .details,
+body.high-contrast .countdown,
+body.high-contrast .info,
+body.high-contrast .rsvp,
+body.high-contrast .details__card,
+body.high-contrast .info__card,
+body.high-contrast .info__card_golden {
+  background: #fff;
+}
+
+body.high-contrast .footer {
+  background: #000;
+  color: #fff;
+}
+
+body.high-contrast .section__title,
+body.high-contrast .section__subtitle,
+body.high-contrast .section__date,
+body.high-contrast .section__date time,
+body.high-contrast .details__card,
+body.high-contrast .details__card h3,
+body.high-contrast .details__time,
+body.high-contrast .details__time time,
+body.high-contrast .details__desc,
+body.high-contrast .countdown__number,
+body.high-contrast .countdown__label,
+body.high-contrast .rsvp__intro,
+body.high-contrast .rsvp__intro strong,
+body.high-contrast .info__card h3,
+body.high-contrast .info__card_golden h3,
+body.high-contrast .info__card p,
+body.high-contrast .info__card_golden p,
+body.high-contrast .hero__subtitle,
+body.high-contrast .hero__title,
+body.high-contrast .hero__date,
+body.high-contrast .hero__date time,
+body.high-contrast .amp,
+body.high-contrast .story__text,
+body.high-contrast .lang-btn,
+body.high-contrast .btn {
+  color: #000;
+  text-shadow: none;
+}
+
+body.high-contrast .section__title,
+body.high-contrast .section__subtitle,
+body.high-contrast .section__date,
+body.high-contrast .section__date time,
+body.high-contrast .details__card,
+body.high-contrast .details__card h3,
+body.high-contrast .details__time,
+body.high-contrast .details__time time,
+body.high-contrast .details__desc,
+body.high-contrast .countdown__number,
+body.high-contrast .countdown__label,
+body.high-contrast .rsvp__intro,
+body.high-contrast .info__card h3,
+body.high-contrast .info__card_golden h3,
+body.high-contrast .info__card p,
+body.high-contrast .info__card_golden p,
+body.high-contrast .hero__subtitle,
+body.high-contrast .hero__title,
+body.high-contrast .hero__date,
+body.high-contrast .hero__date time,
+body.high-contrast .btn,
+body.high-contrast .skip-link {
+  font-size: max(1.5rem, 1em);
+}
+
+body.high-contrast .section__divider {
+  background: #000;
+}
+
+body.high-contrast .details__card a {
+  background: #000;
+  color: #fff;
+}
+
+body.high-contrast .golden {
+  border-color: #000;
+  box-shadow: 0 0 0 2px #000;
+}
+
+body.high-contrast .olive {
+  border-color: #000;
+  box-shadow: 0 0 0 2px #000;
+}
+
+body.high-contrast .info__card {
+  border-left-color: #000;
+}
+
+body.high-contrast .info__card_golden {
+  border-left-color: #000;
+}
+
+body.high-contrast .btn {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+body.high-contrast .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+body.high-contrast .nav-dot {
+  background: #fff;
+  border-color: #000;
+}
+
+body.high-contrast .nav-dot:hover,
+body.high-contrast .nav-dot.active {
+  background: #000;
+  border-color: #000;
+}
+
+body.high-contrast .lang-switcher {
+  background: #fff;
+  border-color: #000;
+}
+
+body.high-contrast .lang-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+body.high-contrast .contrast-toggle {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+body.high-contrast .footer__heart {
+  color: #fff;
+}
+
+body.high-contrast .footer__text .amp {
+  color: #fff;
+}
+
+/* Auto high-contrast for users who request it */
+@media (prefers-contrast: more) {
+  .details__card,
+  .details__desc,
+  .story__text,
+  .countdown__label,
+  .rsvp__intro,
+  .info__card p,
+  .info__card_golden p {
+    color: #4A4540;
+  }
+
+  .section__subtitle,
+  .section__date,
+  .details__time,
+  .details__time time {
+    color: #7A3F1F;
+  }
+
+  .countdown__number {
+    color: #7B6020;
+  }
+
+  .info__card h3,
+  .info__card_golden h3 {
+    color: #3D5030;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

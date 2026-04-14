@@ -125,4 +125,19 @@
       }
     }, { passive: true });
   }
+
+  // ---------- High Contrast Toggle ----------
+  const contrastToggle = document.getElementById('contrast-toggle');
+  if (contrastToggle) {
+    if (localStorage.getItem('high-contrast') === 'true') {
+      document.body.classList.add('high-contrast');
+      contrastToggle.setAttribute('aria-pressed', 'true');
+    }
+
+    contrastToggle.addEventListener('click', function () {
+      var isActive = document.body.classList.toggle('high-contrast');
+      contrastToggle.setAttribute('aria-pressed', String(isActive));
+      localStorage.setItem('high-contrast', String(isActive));
+    });
+  }
 })();
